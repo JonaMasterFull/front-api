@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-sm-6">
+        <h1>Cisco</h1>
+    </div>
+    <div class="col-sm-6">
+       
+    </div>
+</div>
+
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+          <th scope="col">SKU</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Stock</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cisco of ciscolist">
+          <td>{{ cisco.sku }}</td>
+          <td>{{ cisco.name }}</td>
+          <td>{{ cisco.stock }}</td>
+        </tr>
+      </tbody>
+</table>
+
